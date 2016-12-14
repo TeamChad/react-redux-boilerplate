@@ -1,5 +1,5 @@
 {
-  "name": "NCSC-Portal",
+  "name": "squiz-nz-react-redux-starter-kit",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
@@ -17,7 +17,7 @@
     "react-router": "^3.0.0",
     "redux": "^3.6.0",
     "redux-logger": "^2.7.4",
-    "redux-promise": "^0.5.3",
+    "redux-promise-middleware": "^4.2.0",
     "redux-thunk": "^2.1.0"
   },
   "scripts": {
