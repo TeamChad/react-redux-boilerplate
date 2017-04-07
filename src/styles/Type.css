@@ -1,0 +1,37 @@
+/* Type
+   ========================================================================== */
+
+/*@font-face {
+    font-family: OpenSans;
+    font-style: normal;
+    font-weight: normal;
+    src: url("../../node_modules/npm-font-open-sans/fonts/Regular/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../../node_modules/npm-font-open-sans/fonts/Regular/OpenSans-Regular.woff2") format("woff2"), url("../../node_modules/npm-font-open-sans/fonts/Regular/OpenSans-Regular.woff") format("woff"), url("../../node_modules/npm-font-open-sans/fonts/Regular/OpenSans-Regular.ttf") format("truetype"), url("../../node_modules/npm-font-open-sans/fonts/Regular/OpenSans-Regular.svg#OpenSans-Regular") format("svg");
+}*/
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    margin: 0 0 10px;
+    font-size: 14px;
+    font-size: 1.4rem;
+    line-height: 1.6;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+li {
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-size: 1.4rem;
+    line-height: 1.6;
+}

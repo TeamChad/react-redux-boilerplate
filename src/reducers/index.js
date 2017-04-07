@@ -1,9 +1,13 @@
 import { combineReducers } from 'redux'
-import appSettings from './AppSettings'
+import { routerReducer } from 'react-router-redux'
+import { responsiveStateReducer } from 'redux-responsive'
+import appConfig from './AppConfig'
 
 
 const rootReducer = combineReducers({
-  appSettings
+  browser: responsiveStateReducer,
+  appConfig,
+  routing: routerReducer
 })
 
 export default rootReducer

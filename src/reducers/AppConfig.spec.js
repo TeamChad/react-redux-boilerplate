@@ -1,5 +1,5 @@
 import appSettings from './AppSettings'
-import * as types from '../constants/ActionTypes'
+import * as types from '../constants/'
 
 describe('app settings reducer', () => {
   it('should handle initial state', () => {
