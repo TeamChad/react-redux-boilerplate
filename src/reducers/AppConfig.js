@@ -1,12 +1,12 @@
-import * as types from '../constants/'
+import * as constants from '../constants/'
 
-const initialState = {
+export const initialState = {
     appReady: false
 };
 
-export default function appSettings(state = initialState, action) {
+export default function appConfig(state = initialState, action) {
   switch(action.type) {
-    case types.APP_READY:
+    case constants.APP_READY:
       return {...state, appReady: true };
     default:
       return state; 

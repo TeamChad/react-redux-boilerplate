@@ -2,10 +2,13 @@ import React from 'react'
 import TestUtils from 'react-addons-test-utils'
 import Header from './Header'
 
-const setup = () => {
+const setup = propOverrides => {
+  const props = Object.assign({
+    
+  }, propOverrides)
 
   const renderer = TestUtils.createRenderer()
-  renderer.render(<Header />)
+  renderer.render(<Header {...props} />)
   const output = renderer.getRenderOutput()
 
   return {

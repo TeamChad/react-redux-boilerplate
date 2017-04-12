@@ -2,10 +2,13 @@ import React from 'react'
 import TestUtils from 'react-addons-test-utils'
 import Footer from './Footer'
 
-const setup = () => {
+const setup = propOverrides => {
+  const props = Object.assign({
+    
+  }, propOverrides)
 
   const renderer = TestUtils.createRenderer()
-  renderer.render(<Footer />)
+  renderer.render(<Footer {...props} />)
   const output = renderer.getRenderOutput()
 
   return {

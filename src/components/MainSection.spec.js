@@ -2,10 +2,13 @@ import React from 'react'
 import TestUtils from 'react-addons-test-utils'
 import MainSection from './MainSection'
 
-const setup = () => {
+const setup = propOverrides => {
+  const props = Object.assign({
+    
+  }, propOverrides)
 
   const renderer = TestUtils.createRenderer()
-  renderer.render(<MainSection />)
+  renderer.render(<MainSection {...props} />)
   const output = renderer.getRenderOutput()
 
   return {

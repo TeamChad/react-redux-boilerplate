@@ -1,21 +1,21 @@
-import appSettings from './AppSettings'
-import * as types from '../constants/'
+import appConfig from './AppConfig'
+import { initialState } from './AppConfig'
+import * as constants from '../constants/'
 
 describe('app settings reducer', () => {
   it('should handle initial state', () => {
     expect(
-      appSettings(undefined, {})
-    ).toEqual({
-      appReady: false
-    })
+      appConfig(undefined, {})
+    ).toEqual(initialState)
   })
 
   it('should handle APP_READY', () => {
     expect(
-      appSettings([], {
-        type: types.APP_READY
+      appConfig(initialState, {
+        type: constants.APP_READY
       })
     ).toEqual({
+      ...initialState,
       appReady: true
     })
   })
