@@ -5,10 +5,10 @@ import thunk from "redux-thunk"
 
 import reducer from "./reducers"
 
-const middleware = [thunk];
+const middleware = [thunk]
 
 if (process.env.NODE_ENV !== 'production') {
-  middleware.push(createLogger());
+  middleware.push(createLogger())
 }
 
 export default createStore(

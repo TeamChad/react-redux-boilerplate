@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
-import './App.css';
+import './App.css'
 import Header from '../components/Header'
 import MainSection from '../components/MainSection'
 import Footer from '../components/Footer'
@@ -10,7 +10,7 @@ import * as appActions from '../actions'
 class App extends Component {
 
   componentDidMount() {
-    this.props.actions.appReady();
+    this.props.actions.appReady()
   }
 
   render() {
@@ -20,7 +20,7 @@ class App extends Component {
         <MainSection />
         <Footer />
       </div>
-    );
+    )
   }
 }
 
