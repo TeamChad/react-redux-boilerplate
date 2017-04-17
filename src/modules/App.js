@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import './App.css'
@@ -24,8 +25,12 @@ class App extends Component {
   }
 }
 
+App.propTypes = {
+  appReady: PropTypes.bool.isRequired
+}
+
 const mapStateToProps = state => ({
-  ready: state.ready
+  appReady: state.appReady
 })
 
 const mapDispatchToProps = dispatch => ({
