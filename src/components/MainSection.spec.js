@@ -1,5 +1,5 @@
 import React from 'react'
-import TestUtils from 'react-addons-test-utils'
+import ReactShallowRenderer from 'react-test-renderer/shallow'
 import MainSection from './MainSection'
 
 const setup = propOverrides => {
@@ -7,7 +7,7 @@ const setup = propOverrides => {
     
   }, propOverrides)
 
-  const renderer = TestUtils.createRenderer()
+  const renderer = ReactShallowRenderer.createRenderer()
   renderer.render(<MainSection {...props} />)
   const output = renderer.getRenderOutput()
 

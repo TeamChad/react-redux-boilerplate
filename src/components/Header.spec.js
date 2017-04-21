@@ -1,5 +1,5 @@
 import React from 'react'
-import TestUtils from 'react-addons-test-utils'
+import ReactShallowRenderer from 'react-test-renderer/shallow'
 import Header from './Header'
 
 const setup = propOverrides => {
@@ -7,7 +7,7 @@ const setup = propOverrides => {
     
   }, propOverrides)
 
-  const renderer = TestUtils.createRenderer()
+  const renderer = ReactShallowRenderer.createRenderer()
   renderer.render(<Header {...props} />)
   const output = renderer.getRenderOutput()
 
