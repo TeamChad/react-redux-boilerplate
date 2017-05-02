@@ -1,7 +1,7 @@
 {
   "name": "squiz-nz-react-redux-starter-kit",
   "version": "0.1.0",
-  "description": "Starter kit for gettting started with React, Redux, and React-Router!",
+  "description": "Starter kit for getting started with React, Redux, and React-Router!",
   "main": "index.js",
   "private": true,
   "devDependencies": {
