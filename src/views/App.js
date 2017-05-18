@@ -28,7 +28,7 @@ App.propTypes = {
 }
 
 const mapStateToProps = state => ({
-  appReady: state.appReady
+  appReady: state.appConfig.appReady
 })
 
 const mapDispatchToProps = dispatch => ({
