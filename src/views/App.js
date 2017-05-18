@@ -2,10 +2,8 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
+import WideLayout from '../layouts/WideLayout'
 import './App.css'
-import Header from '../components/Header'
-import MainSection from '../components/MainSection'
-import Footer from '../components/Footer'
 import * as appActions from '../actions'
 
 class App extends Component {
@@ -16,11 +14,11 @@ class App extends Component {
 
   render() {
     return (
-      <div className="app">
-        <Header />
-        <MainSection />
-        <Footer />
-      </div>
+      <WideLayout>
+        <p className="app-intro">
+          To get started, edit <code>src/views/App.js</code> and save to reload.
+        </p>
+      </WideLayout>
     )
   }
 }
