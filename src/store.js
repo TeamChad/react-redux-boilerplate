@@ -1,6 +1,6 @@
-import { applyMiddleware, createStore, compose } from "redux"
+import { applyMiddleware, createStore, compose } from 'redux'
 import {responsiveStoreEnhancer} from 'redux-responsive'
-import thunk from "redux-thunk"
+import thunk from 'redux-thunk'
 import logger from 'redux-logger'
 
 import reducer from "./reducers"
